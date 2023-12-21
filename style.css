@@ -1,0 +1,195 @@
+body {
+    font-family: 'Quicksand',sans-serif; /* Use Quicksand Bold as the default font for the body */
+    margin: 0;
+    padding: 0;
+    letter-spacing: .1rem;
+}
+
+/* Add this to your style.css file */
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 35.8rem;
+    top:83%;
+    transform: translateY(-50%);
+    
+}
+.search{
+    padding: 5px;
+    width: 20rem;
+    border-radius: .7rem;
+    text-align: center;
+    border:1px solid rgb(211, 210, 210);
+    margin-top: 3rem;
+}
+.hd-img{
+    height:5rem;
+    width:14rem;
+    margin-top:2rem;
+}
+
+
+/* Style for the navigation bar */
+nav {
+     /* Set background color for the navigation bar */
+    text-align: center; /* Center the content */
+}
+
+/* Style for the navigation list */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for each navigation item */
+li {
+    margin-right: 10px; /* Adjust the spacing between each item */
+}
+
+/* Style for the navigation links */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800; /* Decrease the font weight */
+    padding: 14px 0;
+    font-size: 16px; /* Adjust the font size */
+}
+
+li:not(:last-child) a::after {
+    content: "";
+    margin-left: 5px; /* Adjust the spacing between the link and separator */
+    color: gray; /* Adjust the color of the separator */
+    font-weight: normal; /* Decrease the font weight */
+    border-left:1px solid ;
+}
+.sec1-flex{
+    display: flex;
+    justify-content: center;
+    gap: 13rem;
+}
+.explore{
+    background-color: #00695b;
+    color: white;
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+}
+.sec1-img{
+    height: 40rem;
+    width: 40rem;
+}
+
+.sec2-flex{
+    display: flex;
+    justify-content: left;
+    gap: 2.5rem;
+    margin: 5rem 8rem;
+}
+
+.sec2-img{
+    border-radius: 1rem;
+}
+
+.sec2-icons{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sec3{
+    text-align: center;
+    padding: 1rem 12rem;
+    margin: 2rem ;
+}
+
+
+
+
+
+
+/* Add this to your style.css file */
+
+.footer {
+    background-color: #00695b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-bottom: 6rem;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+    max-width: 300px; /* Set a maximum width for each column */
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    color: white;
+}
+
+.ftr-copy {
+    background-color: #00554a;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter !important; /* Decrease the font weight */
+    font-family: 'Quicksand'; 
+    padding: 1rem;
+}
+footer a{
+    font-size: 12px;
+}
+/* Add this to your style.css file */
+
+.material-symbols-outlined {
+    font-size: 5rem; /* Adjust the size of the icons */
+}
+
+.footer-column {
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 300px; /* Set a maximum width for each column */
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.ftr-copy {
+    background-color: #00554a;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 10px; /* Add padding for better visibility */
+}
+.ftr-a{
+    display: flex;
+    justify-content: left;
+    gap:1rem;
+}
+.ftr-icon{
+    color: white;
+    font-size: 2rem;
+}
+
