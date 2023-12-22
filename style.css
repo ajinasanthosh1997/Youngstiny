@@ -239,6 +239,12 @@ footer a{
 .ex{
     margin-top: 11rem;
 }
+.ft{
+    display:flex;justify-content: left;gap:.5rem;
+}
+#se{
+    display: block;
+}
 @media only screen and (max-width: 800px) {
     body{
         overflow-x: hidden;
@@ -256,7 +262,9 @@ footer a{
 }   
     /* Adjust the styles for smaller screens */
 @media only screen and (max-width: 480px) {
-    
+    body{
+        overflow-x: hidden;
+    }
     .sec2-flex {
         display: block;
         text-align: center; /* Center the content */
@@ -298,11 +306,27 @@ footer a{
     .footer{
         display: block;
         text-align: center;
+        padding:66px;
     }
     .sec3{
         padding:2rem 0;
     }
     .ex{
-        margin:2rem 4rem;
+        margin: 2rem 3rem;
+        margin-left: 15rem;
+        text-align: center;
+    }
+    .search{
+        width: 60%;
+    }
+    .footer-column{
+        text-align: center;
+        align-items: center;
+    }
+    .ft{
+        justify-content: center;
+    }
+    #se{
+        display: none;
     }
 }
