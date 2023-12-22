@@ -1,0 +1,30 @@
+/* Add this to your style.css file */
+
+/* Define a grid layout for the swiper container */
+.swiper-wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem;  /* Adjust the gap between columns and rows */
+}
+
+/* Adjust the styles for each swiper-slide */
+.swiper-slide1 {
+    text-align: center;
+}
+
+.sec4-img1 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Adjust the styles for smaller screens */
+@media only screen and (max-width: 480px) {
+    .swiper-wrapper1 {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+    .sec4-img1{
+        height: 10rem;
+    width: 15rem;
+    }
+}
