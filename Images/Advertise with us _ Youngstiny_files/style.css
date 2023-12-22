@@ -1,0 +1,2337 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote {
+    quotes: none;
+}
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+del {
+    text-decoration: line-through;
+}
+header, section, article, aside, nav, footer, address {
+    display: block;
+}
+body {
+    font-family: 'quicksandbold';
+    font-size: 17px;
+    color: #333;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
+    url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksanditalic';
+    src: url('fonts/quicksand-italic-webfont.woff2') format('woff2'),
+    url('fonts/quicksand-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('../fonts/quicksand-light-webfont.woff2') format('woff2'),
+    url('../fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+    url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arvo';
+    font-display: auto;
+    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/fonts/roboto/Roboto-RegularItalic.woff")
+    format("woff");
+}
+input,textarea,select{
+    font-family: 'quicksandregular';
+}
+p{
+    line-height: 1.6em;
+    font-family: 'quicksandregular';
+}
+br.clear{
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.thumb{
+    display: block;
+}
+.thumb img{
+    display: block;
+    width:100%;
+}
+a:hover,[type="submit"]:hover{
+    filter: alpha(opacity = 85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width:1200px;
+}
+
+
+#home{
+
+}
+#home header{
+    padding-top: 3%;
+    text-align: center;
+}
+#home header h1{
+
+}
+#home header h1 a{
+
+}
+#home header h1 a img{
+    width: 20%;
+}
+#home header nav{
+    margin: 3% 0;
+}
+#home header nav ul{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+#home header nav ul li{
+    width: 100% !important;
+    margin-right: 0 !important;
+    border-right: 1px solid #000;
+    padding: 0 5% ;
+
+}
+#home header nav ul li:last-child{
+    border-right: 0;
+    margin-right: 0;
+}
+#home header nav ul li:last-child{
+    margin-right: 0;
+}
+#home header nav ul li a{
+    color: #8A8A8A;
+    font-size: 16px;
+}
+#home header nav ul li a.active{
+    color: #000;
+}
+#home header #search {
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    width: 28%;
+    padding: 3px 3px 3px 30px;
+    display: inline-block;
+    position: relative;
+}
+#home header form span.search_icon{
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    top: 5px;
+    left: 6px;
+}
+.owl-item img{
+    width: 100% !important;
+    height: auto !important;
+}
+
+#spotlight{
+    padding-top: 2%;
+}
+#spotlight div.left{
+    text-align: left;
+    width: 40%;
+    padding-top: 17%;
+    padding-left: 2%;
+
+}
+#spotlight div.left h1{
+    font-size: 30px;
+    font-family: 'quicksandbold';
+}
+#spotlight div.left p{
+    margin: 3% 0;
+    color: #474747;
+    font-size: 16px;
+    text-align: justify;
+}
+#spotlight div.left a.button{
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #00695b;
+    color: #fff;
+    border-radius: 50px;
+}
+#spotlight div.right{
+    width: 60%;
+    margin-top: -10px;
+}
+#spotlight div.right img{
+    float: right;
+    width: 85%;
+}
+
+
+
+#about{
+    padding-top: 10%;
+    text-align: center;
+}
+#about h3{
+    margin-bottom: 4%;
+    font-size: 25px;
+}
+#about div.left{
+    width: 50%;
+}
+#about div.left img{
+    width: 100%;
+    border-radius: 15px;
+}
+#about div.right{
+    width: 40%;
+    padding-top: 3%;
+    text-align: left;
+    float: left;
+    margin-left: 4%;
+}
+#about div.right a{
+    color: #000;
+}
+#about div.right h3{
+    font-size: 20px;
+}
+#about div.right p{
+    margin: 3% 0;
+    color: #474747;
+    font-size: 15px;
+}
+#about div.right div.social{
+
+}
+#about
+}
+#about div.right div.social div.left{
+    text-align: left;
+    width: 40%;
+}
+#about div.right div.social div.left p{
+    color: #8a8a8a;
+    font-family: 'quicksandbold';
+    font-size: 16px;
+}
+#about div.right div.social div.right{
+    width: 50%;
+    float: right;
+    padding-top: 1%;
+}
+#about div.right div.social div.right span.icon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 2%;
+}
+html body section#memoirs section.wrapper #sliders.news.owl-carousel.owl-theme.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item li div.top a span img{
+    border-radius: 15px;
+}
+div.social{
+    text-align: center;
+    padding-bottom: 1%;
+}
+div.social p{
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#memoirs{
+    position: relative;
+    padding-top: 5%;
+    text-align: center;
+}
+#memoirs h3{
+    margin-bottom: 4%;
+    font-size: 25px;
+}
+#memoirs div.name{
+    height: 42px;
+    margin-top: 6%;
+}
+#memoirs div.name h3{
+    font-size: 20px;
+}
+#memoirs ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#memoirs ul li{
+    /*padding: 2%;*/
+    margin-right: 4%;
+}
+#memoirs ul li:nth-child(3){
+    margin-right: 0;
+}
+#memoirs ul li div.top span {
+    display: inline-block;
+    width: 100%;
+}
+#memoirs ul li div.top span a{
+    color: #000;
+    display: block;
+}
+#memoirs ul li div.top {
+    margin-bottom: 4%;
+}
+
+#memoirs section{
+    display: flex;
+    flex-wrap: wrap;
+}
+#memoirs div.container-fluid{
+    width: 100%;
+}
+#memoirs section div:nth-child(3){
+    margin-right: 0;
+}
+#memoirs section div div.top span {
+    display: inline-block;
+    width: 100%;
+}
+#memoirs section div div.top span a{
+    color: #000;
+    display: block;
+}
+#memoirs section div div.top {
+    margin-bottom: 4%;
+}
+
+#memoirs section .owl-item img{
+    width: 100%;
+    border-radius: 15px;
+}
+#memoirs section div div.bottom{
+
+}
+#memoirs section#sliders div{
+
+}
+#memoirs section div div.bottom h3{
+    text-align: left;
+    font-size: 20px;
+}
+#memoirs section div div.name h3 a{
+    color: #000;
+}
+#memoirs section div div.bottom p{
+    color: #474747;
+    font-size: 16px;
+    text-align: left;
+}
+#memoirs section div div.share{
+    margin-top: 2%;
+}
+#memoirs section div div.share p a{
+    color: #8a8a8a;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    font-family: 'quicksandbold';
+}
+#memoirs section div div.share span.icon{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    float: right;
+    padding-top: 2%;
+}
+
+
+#memoirs div.top span a img{
+    width: 100%;
+    border-radius: 15px;
+}
+#memoirs div.bottom{
+
+}
+#memoirs div.bottom h3{
+    text-align: left;
+    font-size: 20px;
+}
+#memoirs div.name h3 a{
+    color: #000;
+}
+#memoirs div.bottom p{
+    color: #474747;
+    font-size: 16px;
+    text-align: left;
+}
+#memoirs div.share{
+    margin-top: 2%;
+}
+#memoirs div.share p a{
+    color: #8a8a8a;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    font-family: 'quicksandbold';
+}
+#memoirs div.share span.icon{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    float: right;
+    padding-top: 2%;
+}
+#memoirs hr{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.5);
+    margin: 4% 0;
+}
+#memoirs div.slidercontainer{
+    position: relative;
+    color: green;
+}
+#memoirs div.slidercontainer div.item{
+    width: 100%;
+    position: relative;
+    /*padding: 56px;*/
+    float: left;
+    margin-right: 18px;
+}
+div#slider div.owl-nav{
+    display: block;
+}
+#memoirs div.owl-carousel div.owl-nav button.owl-prev{
+    position: absolute;
+    top: 150px;
+    left: -26px;
+    font-size: 30px
+}
+#memoirs div.owl-carousel div.owl-nav button.owl-next{
+    position: absolute;
+    top: 150px;
+    right:-26px;
+    font-size: 30px;
+}
+#memoirs div.slidercontainer div.item span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #28cc8B;
+    font-size: 20px;
+}
+.owl-carousel .owl-dots.disabled{
+    display: inline-block;
+}
+.owl-theme .owl-dots{
+    position: absolute;
+    top: 114%;
+    left: 47%;
+}
+.owl-dot.active span{
+    background: #000 !important;
+}
+.owl-theme .owl-nav {
+    display: none;
+}
+
+#bottom{
+    padding: 13% 0 5% 0;
+    text-align: center;
+}
+#bottom h3{
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+#bottom p{
+    padding: 0 10%;
+    font-size: 16px;
+}
+
+
+#contact{
+    padding: 0;
+}
+#contact .top{
+    background-color: #00695b;
+    padding: 4% 0;
+}
+#contact .top ul{
+    display: flex;
+    padding-left: 14%;
+}
+#contact .top ul li{
+    width: 33.33%;
+}
+#contact .top ul li h4{
+    color: #fff;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+#contact .top ul li span{
+    display: block;
+    margin: 3% 0;
+}
+#contact .top ul li span.mail{
+    margin: 3% 0 8% 0;
+}
+#contact .top ul li span img{
+    width: 5%;
+    margin-right: 2%;
+}
+#contact .top ul li span a{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'quicksandbold';
+    vertical-align: super;
+}
+#contact .top ul li span.social{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 3%;
+}
+#contact .top ul li span.social img{
+    width: 90%;
+
+}
+#contact .bottom{
+    background-color: #00554a;
+    text-align: center;
+    padding: 1% 0;
+}
+#contact .bottom p{
+    color: #fff;
+    font-size: 12px;
+}
+#contact .bottom p a{
+    color: #fff;
+}
+
+
+
+
+
+/* Contact page  starts here*/
+
+#contacts{
+    background-color: #00695b;
+    padding: 3% 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+}
+#contacts h3{
+    font-size: 23px;
+}
+#contacts p a{
+    color: #fff;
+    font-family: 'quicksandregular';
+    font-size: 15px;
+}
+
+#advertisement{
+    padding: 3% 0;
+    text-align: center;
+}
+#advertisement p{
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+#advertisement p.last{
+    margin-bottom: 0;
+}
+#advertisement p a{
+    color: #000;
+    font-family: 'quicksandbold';
+}
+#advertisement span{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: #000;
+    margin:1% 0 2% 0;
+}
+
+
+
+
+/*Memoir Page starts here*/
+#memoir{
+    background-color: #00695b;
+    text-align: center;
+    padding: 3%;
+    margin-top: 5%;
+}
+#memoir h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 23px;
+}
+#memoirs div.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+#memoirs div.row div.infoBar{
+    padding: 3px 10px !important;
+    color: #848484!important;
+    background: #fff !important;
+    font-family: 'quicksandregular';
+    text-decoration: none;
+    border: 1px solid #BFBFBF;
+    margin: 2px;
+}
+#memoirs div.row div.pagination{
+    line-height: 32px;
+}
+#memoirs div.row div.pagination span.endless_page_current{
+    color: #fff !important;
+    background: #00695c !important;
+    font-family: 'quicksandregular';
+    text-decoration: none;
+    border: 1px solid #BFBFBF;
+    padding: 3px 10px;
+    margin: 2px;
+    width: 25%;
+}
+#memoirs div.row div.pagination span.endless_page_current:last-child strong{
+    margin-right: 7px;
+}
+
+#memoirs div.row div.pagination a.endless_page_link{
+    padding: 3px 10px !important;
+    margin: 2px;
+    color: #848484!important;
+    background: #fff !important;
+    border: 1px solid #BFBFBF;
+    font-family: 'quicksandregular';
+}
+body.inner #memoirs div.name{
+    height: 50px;
+}
+body.inner #memoirs ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+body.inner #memoirs ul li{
+    width: 29.3%;
+    margin-right: 6%;
+    position: relative;
+}
+body.inner #memoirs section#sliders div.centre{
+    width: 29.3%;
+    margin-right: 6%;
+    position: relative;
+}
+body.inner #memoirs ul li:nth-child(3),body.inner #memoirs ul li:nth-child(6){
+    margin-right: 0;
+}
+body.inner #memoirs ul li:nth-child(1),body.inner #memoirs ul li:nth-child(2),body.inner #memoirs ul li:nth-child(3){
+    margin-bottom: 8%;
+}
+body.inner #bottom {
+    padding: 5% 0;
+}
+
+#ads ul{
+    width: 100%;
+    float: left;
+}
+#ads ul li{
+    width: 20%;
+    text-align: center;
+    float: left;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#ads ul li img{
+    width: 100%;
+}
+#ads ul li h3{
+    color: #707070;
+    font-size: 24px;
+    font-family: 'ralewaybold';
+    font-weight: bold;
+}
+#ads ul li p{
+    color: #707070;
+    font-family: 'ralewayregular';
+    font-size: 20px;
+}
+
+/*#latestmemoir{
+text-align: center;
+padding-top:3%;
+}
+#latestmemoir h3{
+margin-bottom: 5%;
+font-size: 20px;
+}
+#latestmemoir div.name{
+height: 50px;
+}
+#latestmemoir ul{
+display:flex;
+flex-wrap: wrap;
+}
+#latestmemoir ul li{
+width: 28%;
+margin-right: 4%;
+}
+#latestmemoir ul li:nth-child(n){
+margin-bottom: 6%;
+}
+#latestmemoir ul li:nth-child(2n){
+margin-bottom: 6%;
+}
+#latestmemoir ul li:nth-child(3n){
+margin-bottom: 6%;
+}
+#latestmemoir ul li:nth-child(4n){
+margin-bottom: 0;
+}
+#latestmemoir ul li:nth-child(5n){
+margin-bottom: 0;
+}
+#latestmemoir ul li:nth-child(6n){
+margin-bottom: 0;
+}
+#latestmemoir ul li:nth-child(3n){
+margin-right: 0;
+}
+#latestmemoir ul li:nth-child(6n){
+margin-right: 0;
+}
+#latestmemoir ul li div.top{
+margin-bottom: 10%;
+}
+#latestmemoir ul li div.top img{
+width: 100%;
+display: block;
+}
+#latestmemoir ul li div.bottom{
+text-align: left;
+}
+#latestmemoir ul li div.bottom h5{
+font-size: 20px;
+margin-bottom: 5%;
+}
+#latestmemoir ul li div.bottom p{
+line-height: 1.4em;
+border-bottom: 1px solid #adadad;
+color: #474747;
+padding-bottom: 5%;
+font-size: 16px;
+}
+#latestmemoir hr{
+width: 100%;
+height: 1px;
+background-color: rgba(0,0,0,.5);
+margin: 4% 0;
+}
+#latestmemoir ul li div.share{
+margin-top: 5%;
+}
+#latestmemoir ul li div.share div.left{
+
+}
+#latestmemoir ul li div.share div.left p{
+color: #474747;
+display: inline-block;
+float: left;
+font-size: 16px;
+font-family: 'quicksandbold';
+}
+#latestmemoir ul li div.share div.right{
+width: 50%;
+}
+#latestmemoir ul li div.share div.right img{
+width: 8%;
+display: block;
+float: right;
+}
+#latestmemoir div.share{
+margin-top: 2%;
+}
+#latestmemoir div.share p{
+color: #474747;
+display: inline-block;
+float: left;
+font-size: 16px;
+font-family: 'quicksandbold';
+}
+#latestmemoir div.share span.icon{
+display: inline-block;
+height: 15px;
+width: 15px;
+float: right;
+padding-top: 4%;
+}
+/*#memoirbottom{
+padding-bottom:5%;
+text-align: center;
+}
+#memoirbottom h3{
+margin-bottom:3%;
+font-size: 20px;
+}
+#memoirbottom p{
+padding: 0 10%;
+font-size: 16px;
+}*/
+
+
+
+/*Memoir Page ends here*/
+
+
+
+/*Memoir Single Page Starts Here*/
+
+#name{
+    background-color: #00695b;
+    padding: 3% 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+}
+#name h3{
+    font-size: 23px;
+}
+#name p a{
+    color: #fff;
+    font-family: 'quicksandregular';
+    font-size: 15px;
+}
+/*Memoir Single Page Ends Here*/
+
+#memoirs ul li div.bottom div.icons{
+    font-size: 23px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#memoirs ul li div.share div.icons .banner {
+    margin-bottom: 20px;
+    line-height: 14px;
+}
+#memoirs ul li div.share div.icons.active {
+    display: block;
+}
+#memoirs ul li div.share div.icons {
+    display: none;
+    font-size: 23px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    top: -153px;;
+    bottom: 0;
+    margin: ;
+    left: 0;
+    height: 100px;
+    z-index: 2;
+    background: #fff;
+    width: 236px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#memoirs ul li div.share div.icons img {
+    height:auto;
+    width: 40px !important;
+}
+
+#memoirs section div div.bottom div.icons{
+    font-size: 23px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#memoirs section div div.share div.icons .banner {
+    margin-bottom: 20px;
+    line-height: 14px;
+}
+#memoirs section div div.share div.icons.active {
+    display: block;
+}
+#memoirs section div div.share div.icons {
+    display: none;
+    font-size: 23px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    top: -153px;;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    z-index: 2;
+    background: #fff;
+    width: 236px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#memoirs section div div.share div.icons img {
+    height:auto;
+    width: 40px !important;
+}
+
+
+#memoirs .story div.share div.left a.responsive2{
+    display: none;
+}
+#memoirs .story div.share div.right{
+
+}
+#memoirs .story div.share div.right .view{
+    display: inline-block;
+    margin-top: 10px;
+}
+#memoirs .story div.share div.right .view b{
+    color: #707070;
+    font-weight: bold;
+}
+#memoirs .story div.share div.right ul.social{
+    display: inline-block;
+    margin-left: 25px;
+    float: right;
+}
+#memoirs .story div.share div.right ul.social li{
+    float: left;
+}
+#memoirs .story div.share div.right ul.social li a{
+    font-size: 30px;
+    color: #00695c;
+}
+section#home section.wrapper header form#search label{
+    color: #fff;
+}
+
+
+
+/*Memoir Single Page Starts here*/
+#single_memoir h3{
+    font-size: 23px;
+
+}
+#single_memoir{
+    padding: 5% 0 2% 0;
+}
+#single_memoir div.image{
+    width: 50%;
+    margin: 0 3% 1% 0;
+    float: left;
+}
+#single_memoir div.image img{
+    width: 100%;
+    border-radius: 15px;
+}
+#single_memoir a.social img{
+    width: 100%;
+}
+#single_memoir div.social{
+
+}
+#single_memoir div.social a.social{
+    display: inline-block;
+    margin-right: 2%;
+    height: 24px;
+    width: 24px;
+    }#single_memoir div.social a.social:last-child{
+        margin-right: 0;
+    }
+    #single_memoir p.bold{
+        margin: 1% 0;
+        font-weight: bold;
+        font-size: 16px;
+        color: #8a8a8a;
+    }
+    #single_memoir div.owl-dots {
+        display: none !important;
+    }
+    #single_memoir .owl-item p{
+        overflow: hidden;
+    }
+    #single_memoir p div.imageslider{
+        padding: 3% 0;
+    }
+    #imageslider .owl-theme .owl-nav,#imageslider .owl-theme .owl-dots{
+        display: none;
+    }
+    #single_memoir div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #single_memoir div p{
+        display: inline-block;
+        margin-right: 1%;
+    }
+    #single_memoir div p img{
+        width: 100%;
+    }
+    #single_memoir div.paragraph p.second{
+        margin-top: 2%;
+    }
+    #author{
+        padding-bottom: 5%;
+    }
+    #author div.left{
+        width: 22%;
+        margin-right: 2%;
+    }
+    #author div.left img{
+        width: 100%;
+    }
+    #author div.content{
+        width: 40%;
+        padding-top: 3%;
+        float: left;
+        text-align: left;
+    }
+    #author div.content h3{
+
+    }
+    #author div.content h4{
+        margin: 1% 0;
+    }
+    #author div.content p{
+        font-size: 14px;
+    }
+
+
+    /*Memoir Single Page Ends here*/
+
+
+
+    /*Team Page Starts Here*/
+
+    #team{
+        background-color: #00695b;
+        padding: 3% 0;
+        text-align: center;
+        color: #fff;
+        margin-top: 5%;
+    }
+    #team h3{
+        font-size: 28px;
+    }
+    #team p a{
+        color: #fff;
+        font-family: 'quicksandregular';
+        font-size: 15px;
+    }
+    #founder{
+        padding-top: 5%;
+    }
+    #founder div.left {
+        width: 52%;
+    }
+    #founder div.left.image_container{
+        width: 38%;
+        margin-right: 4%;
+    }
+    #founder div.left.image_container img{
+        width: 100%;
+    }
+    #founder div.left div.container-desc{
+        float: left;
+        width: 46%;
+    }
+    #founder div.left div.container-desc h3{
+
+    }
+    #founder div.left div.container-desc h4{
+        font-size: 14px;
+    }
+    #founder div.left div.container-desc p{
+    }
+    #founder div.left div.description {
+        float: left;
+        margin-top: 1%;
+        width: 46%;
+        text-align: justify;
+    }
+
+    #founder div.right{
+        width: 48%;
+        border-left: 1px solid #cecece;
+        padding: 7% 5%;
+    }
+    #founder div.right p{
+        font-size: 28px;
+        position: relative;
+        font-family: 'quicksandbold';
+    }
+    .tag{
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'quicksandbold';
+    }
+    /* #founder div.right p::after{
+    font-size: 64px;
+    font-weight: bold;
+    bottom: -12%;
+    left: 96%;
+}
+#founder div.right p::before{
+font-size: 64px;
+font-weight: bold;
+top: 4%;
+left: -8%;
+} */
+#technical{
+    padding-top: 3%
+}
+#technical span.button{
+    display: inline-block;
+    height: 60px;
+    width: 250px;
+    line-height: 60px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#technical span.button small{
+    font-size: 20px;
+}
+#technical ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    justify-content: space-between;
+}
+#technical li.tech{
+    width: 30%;
+    text-align: center;
+}
+#technical li.tech div.image_container img{
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+#technical li.tech div.image_container{
+    margin-bottom: 3%;
+}
+#technical li.tech div.description{
+    margin-top: 2%;
+}
+#technical li.content{
+    text-align: center;
+}
+#technical ul  li.tech:nth-child(3){
+    margin-right: 0;
+}
+#technical ul  li.tech span.image{
+    display: inline-block;
+    width: 58%;
+    margin-bottom: 3%;
+}
+#technical ul  li.tech span.image img{
+    width: 100%;
+}
+#technical li.tech div.container-desc h4{
+    font-size: 14px;
+}
+#advisory{
+    padding: 5% 0;
+}
+#advisory span.button{
+    display: inline-block;
+    height: 60px;
+    width: 250px;
+    line-height: 60px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#advisory span.button small{
+    font-size: 20px;
+}
+#advisory ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}
+#advisory ul li{
+    width: 48%;
+    margin-right: 4%;
+}
+#advisory ul li:last-child{
+    margin-right: 0;
+}
+#advisory ul li span.image{
+    display: inline-block;
+    width: 40%;
+}
+#advisory ul li span.image img{
+    width: 100%;
+    border-radius: 50%;
+}
+#advisory ul li div.image_container{
+    width: 56%;
+    padding: 2%;
+}
+#advisory ul li div.image_container h4{
+    font-size: 12px;
+}
+#advisory ul li p{
+    font-size: 12px;
+    margin-top: 4%;
+}
+/*Team page Ends Here*/
+
+
+
+
+
+
+/* Responsive style starts here*/
+@media all and (max-width: 1280px){
+    #home header h1 a img {
+        width: 18%;
+    }
+    #home header nav ul {
+        display: flex;
+        padding-left: 22%;
+    }
+    #home header nav ul li {
+        width: 18%;
+        margin-right: 1%;
+        border-right: 1px solid #000;
+    }
+    #home header #search {
+        width: 40%;
+    }
+    #technical li.tech {
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 980px){
+    #home header h1 a img {
+        width: 18%;
+    }
+    #home header nav ul {
+        display: flex;
+        padding-left: 22%;
+    }
+    #home header nav ul li {
+        width: 18%;
+        margin-right: 1%;
+        border-right: 1px solid #000;
+    }
+    #about div.right{
+        float: right;
+    }
+    #about div.right{
+        padding-top: 3%;
+        text-align: left;
+        width: 100%
+    }
+    #about div.right p{
+        margin: 1% 0;
+    }
+    #about div.right h3 {
+        margin-bottom: 1%;
+    }
+    #about h3 {
+        margin-bottom: 3%;
+    }
+    #spotlight div.right{
+        width: 55%;
+    }
+    #spotlight div.left{
+        width: 45%;
+    }
+    #spotlight div.right img {
+        float: right;
+        width: 75%;
+    }
+    #spotlight div.left h1 {
+        font-size: 35px;
+    }
+    #spotlight div.left p {
+        margin: 3% 0;
+        font-size: 15px;
+    }
+    #spotlight div.left a.button {
+        display: inline-block;
+        height: 35px;
+        width: 120px;
+        text-align: center;
+        line-height: 35px;
+        background-color: #00695b;
+        color: #fff;
+        border-radius: 50px;
+    }
+    #home header #search {
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+        width: 40%;
+        padding: 3px 3px 3px 30px;
+        display: inline-block;
+        position: relative;
+    }
+    #about div.right div.social div.left{
+        width: 22%;
+    }
+    #about div.right div.social div.right {
+        width: 50%;
+        float: none;
+        padding-top: 5px;
+    }
+    #about div.left img{
+        width: 90%;
+    }
+    #about div.right{
+        margin-left: 4%;
+    }
+    #home header h1 a img {
+        width: 18%;
+    }
+    #home header nav ul {
+        display: flex;
+        padding-left: 22%;
+    }
+    #home header nav ul li {
+        width: 18%;
+        margin-right: 1%;
+        border-right: 1px solid #000;
+    }
+    #home header #search {
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+        width: 40%;
+        padding: 3px 3px 3px 30px;
+        display: inline-block;
+        position: relative;
+    }
+    #founder div.right p::before {
+        top: 3%;
+        left: -10%;
+    }
+    #founder div.right p::after {
+        bottom: -6%;
+        left: 96%;
+    }
+    #founder div.left div.container-desc{
+        padding-top: 12%;
+    }
+    #founder div.left div.description{
+        float: left;
+        margin-top: 1%;
+        width: 100%;
+    }
+    #author div.content{
+        width: 65%;
+    }
+    #ads ul li p{
+        font-size: 18px;
+    }
+    #ads ul li h3{
+        font-size: 22px;
+    }
+    #about div.centre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about div.right{
+        text-align: center;
+    }
+    #about div.right div.social{
+        text-align: center;
+    }
+    #about div.right div.social div.left{
+        width: 44%;
+        text-align: right;
+    }
+    #about div.right div.social div.right{
+        text-align: right;
+        width: 69%;
+    }
+}
+
+@media all and (max-width: 768px){
+    #home header h1 a img {
+        width: 18%;
+    }
+    #home header nav ul li {
+        width: 18%;
+    }
+    #home header nav ul {
+        padding-left: 22%;
+    }
+    #spotlight div.left{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #spotlight div.right{
+        display: none;
+    }
+    #spotlight div.left h1{
+        font-size: 30px;
+    }
+    #spotlight div.left p {
+        padding: 0px 12%;
+        text-align: justify;
+    }
+    #about h3{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #about div.right{
+        padding-top: 4%;
+    }
+    #about div.right div.social div.right{
+        display: none;
+    }
+    #spotlight{
+        padding: 0;
+    }
+    #memoirs h3{
+        text-align: center;
+    }
+    #memoirs {
+        position: relative;
+    }
+    .owl-theme .owl-dots{
+        position: absolute;
+        top: 107%;
+        left: 44%;
+    }
+    #memoirs {
+        padding-top: 7%;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    #memoirs div.top img {
+        width: 100%;
+    }
+    #memoirs ul li {
+        /*padding: 5%;*/
+    }
+    #founder div.right p{
+        text-align: center;
+    }
+    #home header nav ul li a{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    #bottom p {
+        padding: 0;
+    }
+    #contact .top {
+        background-color: #00695b;
+        padding: 8% 0 4% 0;
+    }
+    #contact .top ul {
+        display: inline;
+        padding-left: 0%;
+        text-align: center;
+    }
+    #contact .top ul li {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+    #contact .top ul li:last-child{
+        margin-bottom: 0;
+    }
+    #contact .top ul li span img {
+        width: 2.5%;
+    }
+    #contact .top ul li span.social img {
+        width: 80%;
+    }
+    #home header h1 a img {
+        width: 20%;
+    }
+    #about div.centre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about div.right{
+        text-align: center;
+    }
+    #about div.right div.social{
+        text-align: center;
+    }
+    #about div.right div.social div.left{
+        width: 100%;
+        text-align: center;
+    }
+    #bottom {
+        padding: 11% 0 5% 0;
+    }
+    #home header h1 a img {
+        width: 18%;
+    }
+    #home header nav ul li {
+        width: 18%;
+    }
+    #home header nav ul {
+        padding-left: 22%;
+    }
+    #home header h1 a img {
+        width: 20%;
+    }
+    #contact .top {
+        background-color: #00695b;
+        padding: 8% 0 4% 0;
+    }
+    #contact .top ul {
+        display:inline;
+        padding-left: 0%;
+        text-align: center;
+    }
+    #contact .top ul li {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+    #contact .top ul li:last-child{
+        margin-bottom: 0;
+    }
+    #contact .top ul li span img {
+        width: 2.5%;
+    }
+    #contact .top ul li span.social img {
+        width: 80%;
+    }
+    #home header h1 a img {
+        width: 20%;
+    }
+    #bottom p {
+        padding: 0;
+    }
+    body.inner #memoirs ul li:nth-child(3),#latestmemoir ul li:nth-child(5){
+        margin-right:  0%;
+    }
+    body.inner #memoirs ul li {
+        width: 31.3%;
+        margin-right: 3%;
+    }
+    body.inner #memoirs div.name{
+        height: 42px;
+    }
+    #memoirs div.bottom h3{
+        font-size: 18px;
+    }
+    #founder div.left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #founder div.left.image_container img{
+
+        height: 181px;
+        width: 181px;
+    }
+    #founder div.left.image_container{
+        width: 38%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #founder div.left div.description{
+        width: 100%;
+        text-align: center;
+    }
+    #technical div.content h4{
+        font-size: 15px;
+    }
+    #founder div.left div.container-desc{
+        padding-top: 6%;
+        text-align: center;
+        width: 100%;
+    }
+    #founder div.right {
+        width: 100%;
+        border-left: none;
+        padding: 8%;
+    }
+    #founder div.right p::before {
+        top: 0%;
+        left: -6%;
+        font-size: 50px;
+    }
+    #founder div.right p::after {
+        bottom: -8%;
+        left: 87%;
+        font-size: 50px;
+    }
+    #advisory ul li div.image_container {
+        width: 72%;
+        padding: 2%;
+    }
+    #advisory ul li span.image {
+        display: inline-block;
+        width: 24%;
+    }
+    #advisory ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 7%;
+    }
+    #advertisement p{
+        padding: 0 10%;
+    }
+    #single_memoir div.image{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    #single_memoir div.social{
+        margin-bottom: 3%;
+    }
+    #author{
+        padding-top: 3%;
+    }
+    #author div.content{
+        width: 70%;
+    }
+    #author div.left{
+        width: 28%;
+    }
+    #ads ul li p{
+        font-size: 17px;
+    }
+    #ads ul li h3{
+        font-size: 20px;
+    }
+    #ads ul li{
+        width: 30%;
+
+    }
+    #ads ul li:nth-child(3n){
+        margin-right: 0;
+    }
+
+}
+@media all and (max-width: 640px){
+    #home header h1 a img {
+        width: 20%;
+    }
+    #home header nav ul li {
+        width: 19%;
+    }
+    #home header #search {
+        width: 44%;
+    }
+    #spotlight div.left p {
+        padding: 0 5%;
+        text-align: justify;
+    }
+    #bottom {
+        padding: 15% 0 7% 0;
+        text-align: center;
+    }
+    #memoirs div.top img {
+        width: 100%;
+    }
+    #memoirs div.share p{
+        font-size: 12px;
+    }
+    #home header h1 a img {
+        width: 20%;
+    }
+    body.inner #memoirs ul li,body.inner #memoirs ul li:nth-child(3n){
+        width: 49%;
+        margin-right: 2%;
+    }
+    body.inner #memoirs ul li:nth-child(2n){
+        margin-right: 0;
+    }
+    #founder div.left div.container-desc{
+        padding-top: 2%;
+        width: 100%;
+    }
+    #founder div.left div.container-desc h3{
+        font-size: 18px;
+    }
+    #founder div.left div.container-desc h4{
+        font-size: 16px;
+    }
+    #founder div.left div.description p{
+        line-height: 1.4em;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #founder div.right p::after{
+        bottom: -8%;
+        left: 85%;
+    }
+    #founder div.left.image_container img{
+        height: 181px;
+        width: 181px;
+    }
+    #technical div.content h3{
+        font-size: 16px;
+    }
+    #technical div.conte494h4{
+        font-size: 13px;
+    }
+    #technical li.tech{
+        width: 47.5%;
+        margin-bottom: 5%;
+    }
+    #technical ul{
+        margin-bottom: -5%;
+    }
+    #founder div.right p{
+        font-size: 13px;
+    }
+    #founder div.right {
+        margin: 3% 0;
+    }
+    #home header h1 a img {
+        width: 20%;
+    }
+    #single_memoir p {
+        font-size: 14px;
+    }
+    #single_memoir p.bold{
+        font-size: 14px;
+    }
+    #author div.content{
+        padding-top: 0;
+        width: 66%;
+    }
+    #author div.left{
+        width: 32%;
+    }
+    #author div.content h3{
+        font-size: 16px;
+    }
+    #author div.content p{
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    #author div.content h4 {
+        font-size: 14px;
+        margin: 1% 0;
+    }
+
+}
+@media all and (max-width: 480px){
+    p{
+        text-align: justify;
+    }
+    #home header h1 a img {
+        width: 35%;
+    }
+    #home header nav ul {
+        padding-left: 9%;
+    }
+    #home header nav ul li {
+        width: 22%;
+    }
+    #spotlight div.left p {
+        padding: 0 0%;
+        text-align: justify;
+    }
+    #home header #search {
+        width: 64%;
+    }
+
+    #bottom {
+        padding: 20% 0 8% 0;
+        text-align: center;
+    }
+    #contact .top ul li span a {
+        vertical-align: inherit;
+    }
+    #memoirs h3 {
+        margin-bottom: 8%;
+        text-align: center;
+    }
+    #about div.left img {
+        width: 100%;
+    }
+    .owl-theme .owl-dots {
+        position: absolute;
+        top: 107%;
+        left: 30%;
+    }
+    #about div.left{
+        width: 75%;
+    }
+    #about div.right a{
+        font-size: 18px;
+    }
+    #about h3{
+        text-align: center;
+    }
+    #memoirs div.name {
+        height: 42px;
+        margin-top: 5%;
+    }
+    #memoirs div.bottom h3 {
+        font-size: 16px;
+    }
+    #memoirs div.share p a{
+        font-size: 12px;
+    }
+    #about div.right div.social div.left p{
+        font-size: 12px;
+    }
+    #home header h1 a img {
+        width: 35%;
+    }
+    #home header nav ul {
+        padding-left: 9%;
+    }
+    #home header nav ul li {
+        width: 22%;
+    }
+    #home header #search {
+        width: 64%;
+    }
+    body.inner #memoirs ul li{
+        width: 100%;
+        padding:  0 10%;
+    }
+    body.inner #memoirs ul li, body.inner #memoirs ul li:nth-child(3n){
+        width: 100%;
+        padding:  0 10%;
+    }
+    body.inner #memoirs ul li:nth-child(2n), body.inner #memoirs ul li:nth-child(1){
+        margin-bottom: 14%;
+    }
+    body.inner #memoirs ul li:nth-child(5), body.inner #memoirs ul li:nth-child(3){
+        margin-bottom: 14%;
+    }
+    body.inner #memoirs div.bottom h3{
+        text-align: center;
+    }
+    /*body.inner #memoirs ul li div.top span{
+    width: 90%;
+    }*/
+    body.inner #memoirs div.bottom p {
+        font-size: 12px;
+        text-align: justify;
+    }
+    #bottom p{
+        font-size: 12px;
+        text-align: justify;
+    }
+    #contact .bottom{
+        padding: 1% 22%;
+    }
+    #technical{
+        text-align: center;
+    }
+    #technical ul li span.image{
+        width: 84%;
+    }
+    #technical div.content h3{
+        font-size: 14px;
+    }
+    #technical div.content h4{
+        font-size: 10px;
+    }
+    #advisory{
+        text-align: center;
+    }
+    #technical span.button small {
+        font-size: 16px;
+    }
+    #technical span.button{
+        height: 50px;
+        width: 222px;
+        line-height: 50px;
+    }
+    #advisory span.button{
+        height: 50px;
+        width: 222px;
+        line-height: 50px;
+    }
+    #advisory span.button small {
+        font-size: 16px;
+    }
+    #advisory ul li span.image {
+        width: 29%;
+    }
+    #advisory ul li div.image_container h4{
+        font-size: 12px;
+        margin: 2% 0;
+    }
+    #advisory ul li div.image_container h3{
+        font-size: 15px;
+    }
+    #advisory ul li div.image_container{
+        text-align: left;
+        width: 71%;
+    }
+    #founder div.right p::after {
+        bottom: -6%;
+        left: 85%;
+    }
+    #home header h1 a img {
+        width: 35%;
+    }
+    #home header nav ul {
+        padding-left: 9%;
+    }
+    #home header nav ul li {
+        width: 22%;
+    }
+    #home header #search {
+        width: 64%;
+    }
+    #advertisement p{
+        padding: 0 6%;
+    }
+    #author div.left{
+        float: none;
+        width: 50%;
+        margin-bottom: 2%;
+    }
+    #author div.content{
+        float: none;
+        width: 100%;
+    }
+    #author div.left {
+        float: none;
+        width: 35%;
+        margin: 0 auto;
+    }
+    #author div.content {
+        margin-top: 2%;
+        text-align: center;
+    }
+    #contact .bottom p{
+        text-align: center;
+    }
+    #founder div.left.image_container {
+        width: 43%;
+    }
+    #team section.wrapper p{
+        text-align: center;
+        display: none;
+    }
+    #name section.wrapper p {
+        text-align: center;
+    }
+    #contacts section.wrapper p{
+        text-align: center;
+        display: none;
+    }
+    #ads ul li p{
+        text-align: center;
+    }
+    #ads ul li:nth-child(2n){
+        margin-right: 0;
+    }
+    #ads ul li:nth-child(3n){
+        margin-right: 5%;
+    }
+    #ads ul li{
+        width: 47%;
+    }
+    #about div.right p{
+        text-align: center;
+    }
+}
+@media all and (max-width: 420px){
+    #technical li.tech {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+}
+@media all and (max-width: 400px){
+    #founder div.left div.description {
+        width: 100%;
+    }
+    #founder div.left div.container-desc {
+        padding-top: 6%;
+    }
+    #founder div.left div.description p{
+        line-height: 1.6em;
+    }
+    #contact .bottom {
+        padding: 1% 14%;
+    }
+    #founder div.left.image_container {
+        width: 47%;
+    }
+}
+
+@media all and (max-width: 360px){
+    p{
+        line-height: 1.4em;
+    }
+    #technical ul, #advisory ul {
+        margin-top: 12%;
+    }
+    #founder {
+        padding-top: 12%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #home header #search {
+        width: 67%;
+    }
+    #home header nav ul li {
+        width: 24%;
+    }
+    #contact .bottom p {
+        font-size: 10px;
+    }
+    .owl-theme .owl-dots {
+        position: absolute;
+        bottom: -20px;
+        left: 29%;
+    }
+    #technical li.tech div.description p {
+        text-align: center;
+    }
+    #advisory p {
+        text-align: center;
+    }
+    #technical li.tech div.image_container img {
+        width: 90px;
+        height: 90px;
+    }
+    #spotlight div.left p {
+        padding: 0 0%;
+        text-align: justify;
+    }
+    #about div.left{
+        width: 75%;
+    }
+    #about h3{
+        text-align: center;
+    }
+    #about div.right a{
+        text-align: left;
+        font-size: 18px;
+    }
+    #memoirs h3{
+        text-align: center;
+    }
+    #memoirs div.right{
+        text-align: center;
+    }
+    #memoirs div.bottom h3 {
+        text-align: center;
+    }
+    #memoirs div.top img {
+        width: 100%;
+    }
+    #memoirs div.name {
+        height: 32px;
+    }
+    #memoirs ul li a{
+        font-size: 18px;
+    }
+    #memoirs div.bottom p {
+        text-align: center;
+        font-size: 15px;
+    }
+    #memoirs div.share p a{
+        font-size: 12px;
+    }
+    #bottom p{
+        font-size: 15px;
+    }
+    #contact .bottom{
+        padding: 1% 35px;
+    }
+    #about div.right h3{
+        text-align: center;
+    }
+    #home header nav ul li {
+        width: 24%;
+    }
+    #contact .bottom p {
+        font-size: 10px;
+    }
+    body.inner #memoirs ul li{
+        width: 100%;
+        padding:  0 10%;
+    }
+    body.inner #memoirs ul li, body.inner #memoirs ul li:nth-child(3n){
+        width: 100%;
+        padding:  0 10%;
+    }
+    body.inner #memoirs ul li:nth-child(2n), body.inner #memoirs ul li:nth-child(1){
+        margin-bottom: 14%;
+    }
+    body.inner #memoirs ul li:nth-child(5), body.inner #memoirs ul li:nth-child(3){
+        margin-bottom: 14%;
+    }
+    #founder div.left div.container-desc {
+        padding-top: 9%;
+    }
+    #founder div.left div.container-desc h3 {
+        font-size: 16px;
+    }
+    #founder div.left div.container-desc h4 {
+        font-size: 12px;
+    }
+    #technical ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    #technical ul li span.image {
+        width: 29%;
+    }
+    #advisory ul li div.image_container{
+        width: 100%;
+        text-align: center;
+    }
+    #advisory ul li span.image{
+        float: none;
+    }
+    #ads ul li{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 350px){
+    #contact .bottom{
+        padding: 1% 30px;
+    }
+}
+@media all and (max-width: 320px){
+    #founder div.right p::after {
+        bottom: -6%;
+        left: 93%;
+    }
+    #founder div.right p::before {
+        top: 0%;
+        left: -9%;
+    }
+    #bottom p {
+        font-size: 12px;
+    }
+    #home header nav ul li {
+        width: 24%;
+    }
+    #footercontact .bottom p {
+        font-size: 10px;
+    }
+    #advertisement p{
+        font-size: 14px;
+        padding: 0%;
+    }
+    #contact .bottom {
+        padding: 1% 39px;
+    }
+
+}
+
+/* Responsive style ends here*/
+
+/* Additional css of achivement*/
+
+#achievement {
+    padding: 5% 1% 5% 20%;
+
+}
+#achievement section.wrapper {
+}
+#achievement  div.top {
+    padding: 2% 0;
+}
+#achievement  div.top div.logo {
+}
+#achievement  div.top div.logo a {
+    display: block;
+    width: 161px;
+    height: 81px
+}
+#achievement  div.top div.logo a img {
+    width: 100%;
+}
+#achievement  div.bottom {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#achievement  div.bottom div.content_box {
+    width: 55%;
+    padding-top: 2%;
+}
+#achievement  div.bottom div.content_box div.content {
+}
+#achievement  div.bottom div.content_box div.content span{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+    display: block;
+}
+#achievement  div.bottom div.content_box div.content b{
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+    color: #333;
+    font-family:'quicksandregular' ;
+}
+#achievement  div.bottom div.content_box div.content p {
+    color:#9b9b9b;
+    font-size: 18px;
+    line-height: 2em;
+}
+#achievement  div.bottom div.content_box div.content a {
+    padding:2% 9%;
+    background: #20695B;
+    display: inline-block;
+    margin-top: 5%;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#achievement  div.bottom div.content_box div.image {
+    width: 570px;
+    height: 320px
+}
+#achievement  div.bottom div.content_box div.image img {
+    width: 100%
+}
+#achievement  div.bottom div.image_box {
+    width: 40%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center
+}
+#achievement  div.bottom div.image_box img {
+    width: 100%
+}
+
+/*Responsive style starts here*/
+
+/* Extra large devices (large laptops and desktops, 1200px) */
+@media all and (max-width: 1200px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media all and (max-width: 992px) {
+    #achievement {
+        padding: 1% 11% 8% 11%;
+    }
+    #achievement  div.bottom {
+        /* flex-direction:column-reverse; */
+    }
+    #achievement  div.bottom div.content_box {
+        width:95%;
+        margin:0 auto;
+    }
+    #achievement  div.bottom div.image_box {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: none;
+    }
+    #achievement div.bottom div.content_box div.content p {
+        line-height: 1.4em;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (max-width: 768px) {
+    #achievement {
+        padding: 1% 4% 8% 4%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px ) */
+@media all and (max-width: 600px) {
+    #achievement div.bottom div.content_box div.image{
+        width:90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    #achievement {
+        padding: 1% 4% 8% 4%;
+    }
+    #achievement div.bottom div.content_box div.content p{
+        text-align: left;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media all and (max-width: 360px) {
+    #achievement {
+        padding: 1% 4% 8% 4%;
+    }
+}
+
+    /*Responsive style ends here*/

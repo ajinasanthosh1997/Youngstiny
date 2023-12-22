@@ -1,0 +1,157 @@
+function resize(x){
+    console.log(x);
+    function findSmallImage(){
+        var height = 0;
+        $("#single_memoir .owl-carousel img").each(function(){
+            var $this = $(this);
+            var h = $this.outerHeight();
+            if (height == 0){
+                height = h;
+            }
+            if (height > h){
+                height = h;
+            }
+        });
+        $("#single_memoir .owl-carousel p").outerHeight(height)
+    }
+    findSmallImage();
+
+
+    function equalCard($selector){
+        var h = 0;
+        $selector.height('auto');
+        $selector.each(function(){
+            var height = $(this).height();
+            if(height > h){
+                h = height;
+            }
+        });
+        $selector.height(h);
+    }
+    equalCard($('#memoirs div.bottom p'));
+    equalCard($('#memoirs section div div.bottom h3'));
+    equalCard($('#memoirs section div div.bottom p'));
+}
+function openNav() {
+    document.getElementById("mySide").style.width = "250px";
+}
+
+function shareNow(title,text,url){
+    navigator.share({
+        title: title,
+        text: text,
+        url: url
+    }).then(() => console.log('Successful share'))
+    .catch(error => console.log('Error sharing:', error));
+}
+
+
+function closeNav() {
+    document.getElementById("mySide").style.width = "0";
+}
+
+$(document).ready(function(){
+    resize("Ready");
+    $(".image .owl-carousel").owlCarousel({           
+        "loop" : true,
+        "autoplay" :true,
+        "nav" : false,   
+        "margin" : 30,
+        "responsive" : {
+            // breakpoint from 0 up
+            0 : {
+              items : 1
+            },
+            // breakpoint from 480 up
+            480 : {
+              items : 2
+            },
+            // breakpoint from 768 up
+            768 : {
+                items :3
+            }
+        }
+    });     
+
+     $(".owl-carousel").owlCarousel({           
+        "loop" : true,
+        "autoplay" :true,
+        "nav" : false,   
+        "margin" : 30,
+        "responsive" : {
+            // breakpoint from 0 up
+            0 : {
+              items : 1
+            },
+            // breakpoint from 480 up
+            480 : {
+              items : 2
+            },
+            640 : {
+                items :2,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items :3
+            }
+            
+        }
+    });
+
+
+    $('#memoirs section div div.share span.icon').click(function(){
+        var $this = $(this);
+        var id = $this.data('id');
+        var title = $this.data('title');
+        var text = $this.data('text');
+        var url = $this.data('url');
+
+        if (navigator.share !== undefined) {
+                shareNow(title,text,url)
+        } else{
+			var selector = "html body section#memoirs section.wrapper section div div.share div.right.icons." + id;
+			if ($(selector).hasClass('active')){
+				$(selector).removeClass('active');
+				$(selector).parents('li').find('.overlay').addClass('hidden');
+			} else {
+				$(selector).addClass('active');
+				$(selector).parents('li').find('.overlay').removeClass('hidden');
+			}
+		}
+        
+    });
+
+    $('section#memoirs section.wrapper ul li div.share span.icon').click(function(){
+        var $this = $(this);
+        var id = $this.data('id');
+        var title = $this.data('title');
+        var text = $this.data('text');
+        var url = $this.data('url');
+
+        if (navigator.share !== undefined) {
+                shareNow(title,text,url)
+        } else{
+			var selector = "html body.inner section#memoirs section.wrapper ul li div.share div.right.icons." + id;
+			if ($(selector).hasClass('active')){
+				$(selector).removeClass('active');
+				$(selector).parents('li').find('.overlay').addClass('hidden');
+			} else {
+				$(selector).addClass('active');
+				$(selector).parents('li').find('.overlay').removeClass('hidden');
+			}
+		}
+
+        
+    });
+  
+
+});
+
+$(window).resize(function(){
+	resize("Resize");
+});
+
+$(window).on('load',function(){
+	resize("Load");
+});
+
