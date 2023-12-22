@@ -30,8 +30,14 @@ body {
     height:5rem;
     width:14rem;
     margin-top:2rem;
+    filter: brightness(1); /* Initial brightness */
+    transition: filter 0.3s ease-in-out;
 }
 
+
+.hd-img:hover {
+    filter: brightness(1.2); /* Adjust the brightness on hover (1.2 is just an example, you can use different values) */
+}
 
 /* Style for the navigation bar */
 nav {
@@ -78,11 +84,16 @@ li:not(:last-child) a::after {
     padding: .5rem 3rem;
     border-radius: 2rem;
 }
+.explore:hover{
+    filter: brightness(1.2);
+}
 .sec1-img{
     height: 40rem;
     width: 40rem;
 }
-
+.sec1-img:hover{
+    filter: brightness(.8);
+}
 .sec2-flex{
     display: flex;
     justify-content: left;
@@ -93,7 +104,16 @@ li:not(:last-child) a::after {
 .sec2-img{
     border-radius: 1rem;
 }
-
+.sec2-img:hover{
+    filter: brightness(.9);
+}
+.sec-img{
+    height: 1rem;
+    margin-top: 1rem;
+}
+.sec4-img:hover{
+    filter: brightness(.9);
+}
 .sec2-icons{
     margin-top: 2rem;
     margin-left: 4rem;
@@ -107,38 +127,26 @@ li:not(:last-child) a::after {
     padding: 1rem 12rem;
     margin: 2rem ;
 }
-.sec4-img{
-    height: 14rem;
-    width: 22rem;
+.swiper-container {
+    margin-left: 5rem; /* Add white space on the left */
+    margin-right: 5rem; /* Add white space on the right */
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    padding: 20px;
+  }
+
+  .sec4-img {
+    max-width: 100%;
+    height: auto;
     border-radius: 1rem;
-}
-.swiper-container {
-    width: 80%; /* Adjust the width as needed */
-    margin: auto;
-}
+  }
 
 
-.swiper-wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-.my-swiper {
-    margin-left: 20px;  /* Adjust the left margin as needed */
-    margin-right: 20px; /* Adjust the right margin as needed */
-}
-.swiper-container {
-    width: 80%; /* Adjust the width as needed */
-    margin: 5rem;
-}
 
 /* Centered slides with blank space on both sides */
-.swiper-slide {
-    transform-origin: center center;
-    position: relative;
-    /* Optional: Add a max-width to prevent the images from getting too large */
-    max-width: 50%;
-}
+
 /* Add this to your style.css file */
 
 .footer {
@@ -222,30 +230,63 @@ footer a{
 #img{
     display: block;
 }
-@media only screen and (max-width:480px){
-    #img{
+@media only screen and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .sec1-img {
         display: none;
     }
-    .sec1-flex{
-        display: block;
-    }
-    .sec2-flex{
-        display: block;
-    }
 
+    .sec1-flex {
+        display: block;
+        text-align: center; /* Center the content */
+    }
 }
 
-@media only screen and (max-width:800px){
-    #img{
-        display: none;
+/* Adjust the styles for smaller screens */
+@media only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
     }
-    .sec1-flex{
+    .sec1-flex {
         display: block;
-    }
-    .sec2-flex{
-        display: block;
+        text-align: center; /* Center the content */
     }
 
-     
+    .sec2-flex {
+        display: block;
+        margin: 2rem; /* Adjust the margin for spacing */
+    }
+
+    .sec2-icons {
+        margin-top: 1rem; /* Adjust the margin for spacing */
+        margin-left: 0; /* Remove the left margin */
+    }
+
+    .swiper-container {
+        margin-left: 2rem; /* Adjust the left margin for the swiper container */
+        margin-right: 2rem; /* Adjust the right margin for the swiper container */
+    }
+
+    .footer {
+        flex-direction: column; /* Change the flex direction for the footer columns */
+        align-items: center; /* Center the content in the footer */
+        padding-bottom: 2rem; /* Adjust the padding for spacing */
+    }
+
+    .footer-column {
+        text-align: center; /* Center the content in the footer columns */
+        margin-top: 1rem; /* Adjust the top margin for spacing */
+    }
+
+    .search-icon {
+        left: 50%; /* Center the search icon */
+        transform: translateX(-50%); /* Center the search icon */
+    }
+
+    .search {
+        width: 80%; /* Adjust the width of the search input */
+        margin-top: 1rem; /* Adjust the top margin for spacing */
+    }
 }
-

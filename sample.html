@@ -1,0 +1,126 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+            <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+            <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+            <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+            <!-- Default Theme -->
+            <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+            <!-- You can use latest version of jQuery  -->
+            <script src="jquery-1.9.1.min.js"></script>
+
+            <!-- Include js plugin -->
+            <script src="assets/owl-carousel/owl.carousel.js"></script>    
+        </head>
+        <body>
+            <div class="related-products" style="padding-left:50px;background-color:#FBF7EA;">
+                <div><button class="prev-button"><span class="arrow-left">&lt;</span></button></div>
+                <div style="display:flex;font-family: 'dream-regular',sans-serif ;font-size:16px !important;"><h2>Related Products</h2></div>
+                <div><button class="next-button" style="display:flex;position: relative;top: -92px; right: -1351px;"><span class="arrow-right">&gt;</span></button></div>
+                <div class="carousel-container" >
+                  <div class="owl-carousel" style="display:flex;">
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/11.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/22.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/33.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/44.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                            <span class="img">
+                                <img src="images/11.webp" alt="" style='width:100%'>
+                                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                                <p class="price" style="font-size: 16px;">₹ 1990</p>
+                            </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/22.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/33.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="img">
+                            <img src="images/44.webp" alt="" style='width:100%'>
+                            <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                            <p class="price" style="font-size: 16px;">₹ 1990</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>  
+                $(document).ready(function(){
+                  $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    dots: false,
+
+                    responsive: {
+                      0: {
+                        items: 1
+                      },
+                      600: {
+                        items: 2
+                      },
+                      1000: {
+                        items: 4
+                      }
+                    }
+                  });
+                  
+                  $(".prev-button").click(function() {
+                    $(".owl-carousel").trigger("prev.owl.carousel");
+                  });
+              
+                  $(".next-button").click(function() {
+                    $(".owl-carousel").trigger("next.owl.carousel");
+                  });
+                });
+                <script>
+        </body>
+        </html>

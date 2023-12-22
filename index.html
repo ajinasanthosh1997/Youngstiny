@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="{% static 'owl.carousel.css' %}">
-    <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
@@ -64,57 +65,79 @@
         </div>
     </section>
     <section style="margin: 0 8rem;">
-        <div class="swiper-container my-swiper" style="margin: 0rem 5rem;">
+        <h1>Latest Memoirs</h1>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
+                <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="Images/download (2).jpeg" class="sec4-img"> 
+                    <img src="Images/download (2).jpeg" class="sec4-img">
                     <h1>LAYA CRAFTS</h1>
                     <p>Who thought recycling could be so much fun?</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="Images/download (1).jpeg" class="sec4-img">
                     <h1>AWESOMLY</h1>
                     <p>From wearing necklaces to making them!</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="Images/download.jpeg" class="sec4-img">
                     <h1>Seth Ohemeng Boateng</h1>
                     <p>When Fashion becomes your Passion!</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="Images/download (3).jpeg" class="sec4-img">
                     <h1>Luka Eric</h1>
                     <p>When Technology meets Business</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
+                    
                 </div>
                 <div class="swiper-slide">
                     <img src="Images/download (4).jpeg" class="sec4-img">
                     <h1>GURAM</h1>
                     <p>Spreading the taste of Bhutan to the World!</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
+                    
                 </div>
                 <div class="swiper-slide">
                     <img src="Images/download (5).jpeg" class="sec4-img">
                     <h1>ZAIN ARTIEZ</h1>
                     <p>“A single piece of paper changed my life.” - says 17-year-old Shabna</p>
                     <hr>
-                    <a href="#">Read full memoir</p>
+                    <div style="display: flex;justify-content: space-between;">
+                        <a href="#">Read full memoir</a>
+                        <img src="Images/share.svg" class="sec-img">
+                    </div>
+                    
                 </div>
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
-            
-        </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        
     </section>
     <section class="sec3">
         <h1>Drop your memoirs</h1>
@@ -170,28 +193,22 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var mySwiper = new Swiper('.my-swiper', {
-                slidesPerView:3,
-                spaceBetween: 50, // Adjust the space between slides as needed
-                // Centered slides
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            loop:true,
+            autoplay: {
+            delay: 2000, // Set the time interval in milliseconds (e.g., 2000 for 2 seconds)
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
         });
-    </script>
 
+        
+    </script>
 
 </body>
 </html>
