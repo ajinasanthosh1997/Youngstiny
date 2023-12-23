@@ -27,8 +27,9 @@ body {
     margin-top: 3rem;
 }
 .hd-img{
-    height:5rem;
-    width:14rem;
+    height: 14rem;
+    width: 17rem;
+
     margin-top:2rem;
     filter: brightness(1); /* Initial brightness */
     transition: filter 0.3s ease-in-out;
@@ -79,7 +80,7 @@ li:not(:last-child) a::after {
     gap: 13rem;
 }
 .explore{
-    background-color: #00695b;
+    background-color:#E82425;
     color: white;
     padding: .5rem 3rem;
     border-radius: 2rem;
@@ -153,7 +154,7 @@ li:not(:last-child) a::after {
 /* Add this to your style.css file */
 
 .footer {
-    background-color: #00695b;
+    background-color: #E82425;
     color: white;
     padding: 20px;
     display: flex;
@@ -161,7 +162,9 @@ li:not(:last-child) a::after {
     gap: 4rem;
     padding-bottom: 6rem;
 }
-
+.footer:hover {
+    filter: brightness(1.2); /* Adjust the brightness on hover (1.2 is just an example, you can use different values) */
+}
 .footer-column {
     flex: 1;
     text-align: left;
@@ -179,7 +182,7 @@ li:not(:last-child) a::after {
 }
 
 .ftr-copy {
-    background-color: #00554a;
+    background-color:#E82425;
     color: white;
     text-align: center;
     font-size: 12px;
@@ -214,7 +217,7 @@ footer a{
 }
 
 .ftr-copy {
-    background-color: #00554a;
+    background-color:#cb1d1d;
     color: white;
     text-align: center;
     font-size: 12px;
@@ -261,7 +264,7 @@ footer a{
     }
 }   
     /* Adjust the styles for smaller screens */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     body{
         overflow-x: hidden;
     }
