@@ -18,14 +18,16 @@
     width: 29rem;
     border-radius: 1rem;
 }
-section{
+body section{
     margin: 0 8rem;
 }
+
 /* Adjust the styles for smaller screens */
 @media only screen and (min-width: 481px) {
-    section{
+    body section{
         margin: 0 2rem;
     }
+    
     .swiper-wrapper1 {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     }
@@ -37,7 +39,7 @@ section{
 }
 
 @media only screen and (min-width: 769px) {
-    section{
+    body section{
         margin: 0 2rem;
     }
     .swiper-wrapper1 {
