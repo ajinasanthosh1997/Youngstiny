@@ -3,8 +3,8 @@
 /* Define a grid layout for the swiper container */
 .swiper-wrapper1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 3rem;  /* Adjust the gap between columns and rows */
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile screens */
+    gap: 1rem;  /* Adjust the gap between columns and rows */
 }
 
 /* Adjust the styles for each swiper-slide */
@@ -12,22 +12,21 @@
     text-align: center;
 }
 
-.sec4-img1 {
+.sec4-img {
     max-width: 100%;
-    height: 14rem;
-    width: 100%;
+    height: auto;
     border-radius: 1rem;
 }
 
 /* Adjust the styles for smaller screens */
-@media only screen and (max-width: 480px) {
-    .swiper-wrapper {
-        grid-template-columns: 1fr; /* 2 columns for smaller screens */
-        gap: 0.5rem; /* Adjust the gap for smaller screens */
+@media only screen and (min-width: 481px) {
+    .swiper-wrapper1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     }
+}
 
-    .sec4-img1{
-        height: 10rem;
-        width: 15rem;
+@media only screen and (min-width: 769px) {
+    .swiper-wrapper1 {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
     }
 }
