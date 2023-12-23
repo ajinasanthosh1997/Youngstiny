@@ -24,9 +24,9 @@
         grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     }
     .sec4-imgm{
-        height: 8rem;
+        height: 4rem;
     
-    width: 12rem;
+    width: 6rem;
     }
 }
 
