@@ -35,8 +35,8 @@
         grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
     }
     .sec4-imgm{
-        height: 8rem;
+        height: 4rem;
     
-    width: 12rem;
+    width: 6rem;
     }
 }
