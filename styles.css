@@ -22,7 +22,7 @@
 /* Adjust the styles for smaller screens */
 @media only screen and (max-width: 480px) {
     .swiper-wrapper {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-columns: 1fr; /* 2 columns for smaller screens */
         gap: 0.5rem; /* Adjust the gap for smaller screens */
     }
 
