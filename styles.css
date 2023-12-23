@@ -21,9 +21,11 @@
 
 /* Adjust the styles for smaller screens */
 @media only screen and (max-width: 480px) {
-    .swiper-wrapper1 {
-        grid-template-columns:repeat(2, 1fr); /* Single column for smaller screens */
+    .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        gap: 0.5rem; /* Adjust the gap for smaller screens */
     }
+
     .sec4-img1{
         height: 10rem;
         width: 15rem;
