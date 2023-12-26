@@ -4,6 +4,7 @@ body {
     padding: 0;
     letter-spacing: .1rem;
     overflow-x: hidden;
+    
 }
 
 /* Add this to your style.css file */
@@ -202,7 +203,7 @@ footer a{
 .footer-column {
     margin-top: 2rem;
     text-align: left;
-    max-width: 300px; /* Set a maximum width for each column */
+    max-width: auto; /* Set a maximum width for each column */
 }
 
 .footer-column h3 {
@@ -262,6 +263,10 @@ footer a{
         max-width: 100%; /* Make sure the image doesn't exceed its container */
         height: auto; /* Maintain the image's aspect ratio */
     }
+    .footer-column{
+        width: auto;
+        
+    }
 }   
     /* Adjust the styles for smaller screens */
 @media only screen and (max-width: 767px) {
@@ -311,6 +316,10 @@ footer a{
         display: block;
         text-align: center;
         padding:66px;
+    }
+    .footer-column{
+        width: auto;
+        
     }
     .sec3{
         padding:2rem 0;
