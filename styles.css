@@ -1,5 +1,7 @@
 /* Add this to your style.css file */
-
+body{
+    overflow-x:hidden ;
+}
 /* Define a grid layout for the swiper container */
 .swiper-wrapper1 {
     display: grid;
