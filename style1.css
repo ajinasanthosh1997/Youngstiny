@@ -1,5 +1,9 @@
 body{
   overflow-x: hidden;
+  
+}
+body section{
+  margin: 0 2rem;
 }
 .slider {
     margin: 4rem auto;
