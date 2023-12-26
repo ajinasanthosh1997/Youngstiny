@@ -67,15 +67,40 @@
     color: #E82425;
     text-decoration: none;
   }
-
-  @media only screen and (max-width: 767px) {
-    .previous_btn {
-      left: 50px;
-    }
-    .next_btn {
-      right: 50px;
-    }
-    .a{
-        height: 10rem;
-    }
+  .v-flex{
+    margin:2rem 0;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
   }
+  .v-img{
+    height: 24rem;
+    width: 17rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .v-img:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.a{
+  height: 40rem;
+    width: 82rem;
+}
+@media only screen and (max-width: 767px){
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+  
+  .a{
+      height: 14rem;
+      width:24rem;
+  }
+  .v-flex{
+    display: none;
+  }
+  
+}
