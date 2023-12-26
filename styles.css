@@ -22,13 +22,12 @@ body{
 }
 body section{
     margin: 0 8rem;
+    text-align: center;
 }
 .con{
     background-color: #E82425;color: white;padding: 1.5rem 0;text-align: center;margin: 3rem 0;
 }
-.box{
-    background-color: black;padding: 4rem;margin: 0 40rem;
-}
+
 /* Adjust the styles for smaller screens */
 @media only screen and (min-width: 767px) {
     body section{
@@ -60,7 +59,5 @@ body section{
     
     width: 6rem;
     }
-    .box{
-        margin: 0 1rem;
-    }
+    
 }
