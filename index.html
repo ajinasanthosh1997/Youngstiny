@@ -65,13 +65,13 @@
             </div>
         </div>
     </section>
-    <section style="margin: 0 8rem;">
-        <h1>Latest Memoirs</h1>
+    <div>
+        <h1 style="">Latest Memoirs</h1>
         <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <!-- <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                <!-- <div class="swiper-slide">
+                <div class="swiper-slide">
                     <img src="Images/download (2).jpeg" class="sec4-img">
                     <h1>LAYA CRAFTS</h1>
                     <p>Who thought recycling could be so much fun?</p>
@@ -132,14 +132,12 @@
                         <a href="#">Read full memoir</a>
                         <img src="Images/share.svg" class="sec-img">
                     </div>
-                    
-                </div> -->
+                </div>
             </div>
             <!-- If we need pagination -->
             <!-- <div class="swiper-pagination"></div> -->
         </div>
-        
-    </section>
+    </div>
     <section class="sec3">
         <h1>Drop your memoirs</h1>
         <p>Speak Up Dubai is an online publication showcasing vibrant student entrepreneurs and innovators. If you have a story, write to us at <a href="#">hello@speakupdubai.com</a></p>
@@ -197,7 +195,7 @@
         // Initialize Swiper
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 60,
             loop:true,
             autoplay: {
             delay: 2000, // Set the time interval in milliseconds (e.g., 2000 for 2 seconds)
@@ -206,9 +204,44 @@
             el: '.swiper-pagination',
             clickable: true,
             },
+            responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:3
+            }
+        }
         });
 
         
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
     </script>
 
 </body>

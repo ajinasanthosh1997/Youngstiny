@@ -267,6 +267,7 @@ footer a{
 @media only screen and (max-width: 500px) {
     body{
         overflow-x: hidden;
+        margin: 0 1rem;
     }
     .sec2-flex {
         display: block;
@@ -279,7 +280,7 @@ footer a{
         height: 10rem;
     }
     .sec4-img {
-        width: 50%; /* Adjust the width of the images */
+        width: 100%; /* Adjust the width of the images */
       
     }
 
@@ -293,8 +294,8 @@ footer a{
     }
 
     .swiper-container {
-        margin-left: 1rem; /* Adjust the left margin for the swiper container */
-        margin-right: 1rem; /* Adjust the right margin for the swiper container */
+        margin-left: .5rem; /* Adjust the left margin for the swiper container */
+        margin-right: .5rem; 
     }
 
     .search-icon {
