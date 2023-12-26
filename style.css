@@ -267,7 +267,7 @@ footer a{
 @media only screen and (max-width: 500px) {
     body{
         overflow-x: hidden;
-        margin: 0 1rem;
+       
     }
     .sec2-flex {
         display: block;
@@ -333,4 +333,11 @@ footer a{
     #se{
         display: none;
     }
+    .s {
+        margin: 0 2rem;
+    }
+
+   .swiper-slide {
+    /* text-align: center; */
+      padding: 17px;
 }
