@@ -264,7 +264,7 @@ footer a{
     }
 }   
     /* Adjust the styles for smaller screens */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
     body{
         overflow-x: hidden;
        
@@ -340,4 +340,5 @@ footer a{
    .swiper-slide {
     /* text-align: center; */
       padding: 17px;
+   }
 }

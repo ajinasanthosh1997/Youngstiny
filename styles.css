@@ -26,7 +26,7 @@ body section{
 }
 
 /* Adjust the styles for smaller screens */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 767px) {
     body section{
         margin: 0 2rem;
     }
@@ -41,7 +41,7 @@ body section{
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
     body section{
         margin: 0 2rem;
     }
