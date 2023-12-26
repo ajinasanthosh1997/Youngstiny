@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .slider {
     margin: 4rem auto;
     max-width: 940px;
