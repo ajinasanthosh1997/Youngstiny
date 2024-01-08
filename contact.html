@@ -15,11 +15,15 @@
     <style>
     body{
         overflow-x:hidden ;
+        
     }
     .box{
-    background-color: black;padding: 4rem;margin: 0 40rem;
+    background-color: black;display: flex;justify-content: center;align-items: center;
     }
     @media only screen and (min-width: 767px) {
+        section{
+            margin: 0 2rem;
+        }
     
     .box{
           display: hidden; 
@@ -40,11 +44,11 @@
             <img src="Images/SPEAKUP BAHRAIN.jpg" class="hd-img">
         </div>
         <nav>
-            <ul style="display: flex;justify-content: center;">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="memoirs.html">Memoirs</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul style="display: flex; justify-content: center;">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="memoirs.html" class="nav-link">Memoirs</a></li>
+                <li><a href="videos.html" class="nav-link">Videos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <form action="/search" method="get">
@@ -112,7 +116,20 @@
         <div class="ftr-copy">©2019 Speak Up Dubai. All rights reserved | Developed by</div>
         
     </footer>
-  
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var lastSelected = null;
+    
+            $('.nav-link').click(function () {
+                if (lastSelected !== null) {
+                    lastSelected.removeClass('selected');
+                }
+                
+                $(this).addClass('selected');
+                lastSelected = $(this);
+            });
+        });
+    </script>
 </body>
 </html>

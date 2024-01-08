@@ -1,262 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    html, body {
-      background: #F7F5E6;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include the Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>Styled Custom Carousel</title>
+    <style>
+      /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-    .slider {
-      margin: 0 auto;
-      max-width: 940px;
-    }
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
 
-    .slide_viewer {
-      height: 340px;
-      overflow: hidden;
-      position: relative;
-    }
+/* Style the wrapper of the testimonials section */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .slide_group {
-      height: 100%;
-      position: relative;
-      width: 100%;
-    }
+/* Style the heading */
+.heading {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    .slide {
-      display: none;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-    }
+/* Style the testimonial cards */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
 
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* Style the testimonial text */
+.first {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
 
-    .slide:first-child {
-      display: block;
-    }
+/* Style the image container */
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
-    .slide_buttons {
-      left: 0;
-      position: absolute;
-      right: 0;
-      text-align: center;
-    }
+/* Style the image in the container */
+.image_container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
-    a.slide_btn {
-      color: #474544;
-      font-size: 42px;
-      margin: 0 0.175em;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -ms-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-    }
+/* Style the right side of the image container */
+.image_container .right {
+    text-align: left;
+}
 
-    .slide_btn.active, .slide_btn:hover {
-      color: #428CC6;
-      cursor: pointer;
+/* Style the testimonial card on larger screens */
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 20px);
     }
+}
 
-    .directional_nav {
-      height: 340px;
-      margin: 0 auto;
-      max-width: 940px;
-      position: relative;
-      top: -340px;
+/* Style the testimonial card on even larger screens */
+@media (min-width: 1500px) {
+    .card {
+        width: calc(33.33% - 20px);
     }
+}
 
-    .previous_btn {
-      bottom: 0;
-      left: 100px;
-      margin: auto;
-      position: absolute;
-      top: 0;
-    }
-
-    .next_btn {
-      bottom: 0;
-      margin: auto;
-      position: absolute;
-      right: 100px;
-      top: 0;
-    }
-
-    .previous_btn, .next_btn {
-      cursor: pointer;
-      height: 65px;
-      opacity: 0.5;
-      -webkit-transition: opacity 0.4s ease-in-out;
-      -moz-transition: opacity 0.4s ease-in-out;
-      -ms-transition: opacity 0.4s ease-in-out;
-      -o-transition: opacity 0.4s ease-in-out;
-      transition: opacity 0.4s ease-in-out;
-      width: 65px;
-    }
-
-    .previous_btn:hover, .next_btn:hover {
-      opacity: 1;
-    }
-
-    @media only screen and (max-width: 767px) {
-      .previous_btn {
-        left: 50px;
-      }
-      .next_btn {
-        right: 50px;
-      }
-    }
-  </style>
+    </style>
 </head>
 <body>
-  <div class="slider">
-    <div class="slide_viewer">
-      <div class="slide_group">
-        <div class="slide">
-          <img src="Images/download (1).jpeg" alt="Image 1">
-        </div>
-        <div class="slide">
-          <img src="Images/download (2).jpeg" alt="Image 2"> 
-        </div>
-        <div class="slide">
-          <img src="Images/download (3).jpeg" alt="Image 3">
-        </div>
-        <div class="slide">
-          <img src="Images/download (4).jpeg" alt="Image 4">
-        </div>
-      </div>
-    </div>
-  </div><!-- End // .slider -->
-  
-  <div class="slide_buttons"></div>
-  
-  <div class="directional_nav">
-    <div class="previous_btn" title="Previous">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-        <g>
-          <g>
-            <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-        c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
-            <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0 c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564  c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div class="next_btn" title="Next">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-        <g>
-          <g>
-            <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5  c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288  c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
-            <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035      L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
-          </g>
-        </g>
-      </svg>
-    </div>
-  </div><!-- End // .directional_nav -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>
-    $('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
-  
-  function move(newIndex) {
-    var animateLeft, slideLeft;
-    
-    advance();
-    
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-    
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
-    
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
-    } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
-    }
-    
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
-    });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
 
+  <section id="testimonials">
+
+        <div class="wrapper">
+            <div>
+                <h2 class="heading">We’re Delivering The Best Customer Experience</h2>
+	            <section class="carousel-wrap testmonial_card">
+	                <div class="owl-carousel">
+                    <div class="swiper-slide">
+                      <img src="Images/download (2).jpeg" class="sec4-img">
+                      <h1>LAYA CRAFTS</h1>
+                      <p>Who thought recycling could be so much fun?</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="Images/download (1).jpeg" class="sec4-img">
+                      <h1>AWESOMLY</h1>
+                      <p>From wearing necklaces to making them!</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="Images/download.jpeg" class="sec4-img">
+                      <h1>Seth Ohemeng Boateng</h1>
+                      <p>When Fashion becomes your Passion!</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="Images/download (3).jpeg" class="sec4-img">
+                      <h1>Luka Eric</h1>
+                      <p>When Technology meets Business</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                      
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="Images/download (4).jpeg" class="sec4-img">
+                      <h1>GURAM</h1>
+                      <p>Spreading the taste of Bhutan to the World!</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                      
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="Images/download (5).jpeg" class="sec4-img">
+                      <h1>ZAIN ARTIEZ</h1>
+                      <p>“A single piece of paper changed my life.” - says 17-year-old Shabna</p>
+                      <hr>
+                      <div style="display: flex;justify-content: space-between;">
+                          <a href="#">Read full memoir</a>
+                          <img src="Images/share.svg" class="sec-img">
+                      </div>
+                  </div>
+	                    
+                </div>
+	            
+	        </section>
+
+                
+            </div>
+  
+        </div>
+
+        
+        
+                       
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('#testimonials .owl-carousel').owlCarousel({
+              loop: true,
+              dots: true,
+              nav: false,
+              autoplay: true,
+              autoplaySpeed: 1000,
+              margin: 15,
+              autoplayHoverPause: true,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  768: {
+                      items: 2
+                  },
+                  1500: {
+                      items: 3
+                  },
+              }
+          });
       });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
-    });
-  }
-  
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    }, 4000);
-  }
-  
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
-  
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
-  
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-    
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-  
-  advance();
-});
   </script>
+  <!-- <script>
+   $('#testimonials .owl-carousel').owlCarousel({
+        loop: true,
+        dots: true,    
+        nav:false,             
+        autoplay: true,
+        autoplayspeed: 1000,
+        margin:13,   
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1500: {
+                items: 3
+            },
+        }
+    });
+
+  </script> -->
+
 </body>
 </html>

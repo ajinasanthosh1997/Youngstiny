@@ -4,7 +4,6 @@ body {
     padding: 0;
     letter-spacing: .1rem;
     overflow-x: hidden;
-    
 }
 
 /* Add this to your style.css file */
@@ -47,6 +46,7 @@ nav {
     text-align: center; /* Center the content */
 }
 
+
 /* Style for the navigation list */
 ul {
     list-style-type: none;
@@ -61,12 +61,27 @@ li {
 
 /* Style for the navigation links */
 a {
-    color: black;
+    color:gray;
     text-decoration: none;
     font-weight: 800; /* Decrease the font weight */
     padding: 14px 0;
     font-size: 16px; /* Adjust the font size */
 }
+
+.nav-link {
+    color: gray; /* Set the initial color of the links */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+    color:#E82425 ; /* Change color on hover if needed */
+}
+
+.nav-link.active {
+    color: black; /* Change color for the selected item */
+    font-weight: bold; /* Optionally, you can make the text bold for the selected item */
+}
+
 
 li:not(:last-child) a::after {
     content: "";
@@ -137,6 +152,7 @@ li:not(:last-child) a::after {
   .swiper-slide {
     /* text-align: center; */
     padding: 20px;
+    
   }
 
   .sec4-img {
@@ -203,7 +219,7 @@ footer a{
 .footer-column {
     margin-top: 2rem;
     text-align: left;
-    max-width: auto; /* Set a maximum width for each column */
+    max-width: 300px; /* Set a maximum width for each column */
 }
 
 .footer-column h3 {
@@ -249,6 +265,7 @@ footer a{
 #se{
     display: block;
 }
+
 @media only screen and (max-width: 800px) {
     body{
         overflow-x: hidden;
@@ -263,16 +280,12 @@ footer a{
         max-width: 100%; /* Make sure the image doesn't exceed its container */
         height: auto; /* Maintain the image's aspect ratio */
     }
-    .footer-column{
-        width: auto;
-        
-    }
 }   
     /* Adjust the styles for smaller screens */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
     body{
         overflow-x: hidden;
-       
+        /* margin: 0 1rem; */
     }
     .sec2-flex {
         display: block;
@@ -285,7 +298,7 @@ footer a{
         height: 10rem;
     }
     .sec4-img {
-        width: 100%; /* Adjust the width of the images */
+        width: 80%; /* Adjust the width of the images */
       
     }
 
@@ -299,8 +312,8 @@ footer a{
     }
 
     .swiper-container {
-        margin-left: .5rem; /* Adjust the left margin for the swiper container */
-        margin-right: .5rem; 
+        margin-left: 1rem; /* Adjust the left margin for the swiper container */
+        margin-right: 1rem; /* Adjust the right margin for the swiper container */
     }
 
     .search-icon {
@@ -316,10 +329,6 @@ footer a{
         display: block;
         text-align: center;
         padding:66px;
-    }
-    .footer-column{
-        width: auto;
-        
     }
     .sec3{
         padding:2rem 0;
@@ -342,12 +351,4 @@ footer a{
     #se{
         display: none;
     }
-    .s {
-        margin: 0 2rem;
-    }
-
-   .swiper-slide {
-    /* text-align: center; */
-      padding: 17px;
-   }
 }
