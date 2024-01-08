@@ -315,7 +315,9 @@ footer a{
         margin-left: 1rem; /* Adjust the left margin for the swiper container */
         margin-right: 1rem; /* Adjust the right margin for the swiper container */
     }
-
+    .swiper-slide{
+        width: 10rem;
+    }
     .search-icon {
         left: 50%; /* Center the search icon */
         transform: translateX(-50%); /* Center the search icon */

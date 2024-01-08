@@ -29,9 +29,9 @@ body section{
 }
 
 /* Adjust the styles for smaller screens */
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
     body section{
-        margin: 0 2rem;
+        margin: 0 4rem;
     }
     
     .swiper-wrapper1 {
