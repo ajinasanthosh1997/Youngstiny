@@ -151,7 +151,7 @@ li:not(:last-child) a::after {
 
   .swiper-slide {
     /* text-align: center; */
-    padding: 20px;
+    /* padding: 20px; */
     
   }
 
