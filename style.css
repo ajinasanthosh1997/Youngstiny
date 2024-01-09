@@ -115,7 +115,7 @@ li:not(:last-child) a::after {
     display: flex;
     justify-content: left;
     gap: 2.5rem;
-    margin: 5rem 8rem;
+    margin: 5rem 10rem;
 }
 
 .sec2-img{
@@ -280,6 +280,30 @@ footer a{
         max-width: 100%; /* Make sure the image doesn't exceed its container */
         height: auto; /* Maintain the image's aspect ratio */
     }
+    .carousel-wrap {
+        width: 100%; /* Set the desired width for mobile screens */
+        margin: 0 auto; /* Center the carousel on mobile screens */
+    }
+    .ex{
+        margin-top: 0rem;
+    }
+    .sec1-flex{
+        margin: 5rem;
+        /* display: block; */
+    }
+    .sec2-img {
+        border-radius: 1rem;
+        width: 22rem;
+    }
+    .sec2-flex{
+        margin: 5rem 4rem;
+    }
+    .sec3{
+        padding: 1rem 0rem;
+    }
+    
+    
+
 }   
     /* Adjust the styles for smaller screens */
 @media only screen and (max-width: 500px) {
@@ -301,7 +325,7 @@ footer a{
         width: 80%; /* Adjust the width of the images */
       
     }
-
+    
     .sec2-flex {
         margin: 1rem; /* Adjust the margin for spacing */
     }
