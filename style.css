@@ -265,6 +265,10 @@ footer a{
 #se{
     display: block;
 }
+.c{
+    margin: 0 10rem;
+
+}
 
 @media only screen and (max-width: 800px) {
     body{
@@ -341,6 +345,9 @@ footer a{
     }
     .swiper-slide{
         width: 10rem;
+    }
+    .c{
+        margin: 0 2rem;
     }
     .search-icon {
         left: 50%; /* Center the search icon */
